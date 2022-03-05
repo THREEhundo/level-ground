@@ -295,7 +295,7 @@ footer * {
 .footer-left,
 .footer-right,
 .footer-company-info {
-    margin: 0 4rem;
+    margin: 1.5rem 4rem;
 }
 
 .footer-heading {
@@ -399,6 +399,10 @@ footer .logo {
 
 @media screen and (max-width: 650px) {
 
+    :root {
+        font-size: 55%;
+    }
+
     section>section:first-child {
         width: 100%;
         margin-left: 0;
@@ -411,5 +415,9 @@ footer .logo {
 
     .gray>section {
         margin: 5rem 0;
+    }
+
+    .organization-type {
+        width: 65%;
     }
 }
