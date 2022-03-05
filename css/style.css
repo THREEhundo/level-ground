@@ -123,9 +123,9 @@ main+section {
 }
 
 .bg {
-    margin: auto;
     width: 100%;
     z-index: 1;
+    max-width: 1200px;
 }
 
 .link,
@@ -258,7 +258,7 @@ section>section:first-child {
 /* FOOTER
 /*******************************************/
 footer {
-    background: #161f2a;
+    background: #d8761b;
     color: #fff;
 }
 
@@ -266,6 +266,22 @@ footer * {
     font-size: 1.5rem;
     letter-spacing: 1px;
     line-height: 1.5;
+}
+
+main>a:hover {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+a:nth-of-type(1):hover {
+    border: 1px solid white;
+    background: orange;
+    color: white;
+}
+
+a:hover:nth-of-type(3) {
+    border: 3px solid orangered;
 }
 
 .footer-left {
@@ -281,7 +297,7 @@ footer * {
 .footer-heading {
     margin-bottom: 0;
     font-weight: 700;
-    color: gray;
+    color: white;
 }
 
 .footer-company-info {
