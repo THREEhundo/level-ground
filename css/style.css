@@ -313,6 +313,10 @@ main * {
 footer {
     background: #d8761b;
     color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer * {
@@ -327,16 +331,31 @@ footer * {
     color: white;
 }
 
-
-.footer-left {
-    float: left;
-}
-
 .footer-left,
 .footer-right,
 .footer-company-info {
-    margin: 1.5rem 4rem;
+    padding: 3rem;
 }
+
+.footer-left,
+.footer-right {
+    flex-basis: 50%;
+}
+
+.footer-left {
+    padding-right: 0;
+}
+
+.footer-right {
+    text-align: end;
+    padding-left: 0;
+}
+
+.footer-company-info {
+    flex-basis: 100%;
+}
+
+
 
 .footer-heading {
     margin-bottom: 0;
@@ -346,6 +365,12 @@ footer * {
 
 .footer-company-info {
     border-top: 1px solid white;
+}
+
+
+.social>i {
+    padding-right: 2rem;
+    font-size: 3rem;
 }
 
 .socials-list,
@@ -372,20 +397,21 @@ footer * {
     margin-right: 2rem;
 }
 
+/*
 .social {
     width: 25px;
     height: 25px;
-}
+}*/
 
 .fa-2xl {
     font-size: 2rem;
     line-height: 1.5;
 }
 
-.footer-right {
+/*.footer-right {
     float: right;
     margin: 2.5rem 4rem;
-}
+}*/
 
 .footer-right:nth-child(1) {
     margin-top: 1rem;
@@ -410,6 +436,7 @@ footer * {
 
 footer .logo {
     float: right;
+    width: 40px;
 }
 
 /******************************************
