@@ -70,7 +70,7 @@ a {
 p,
 a {
     font-size: 1.6rem;
-    font-weight: 2 00;
+    font-weight: 400;
 }
 
 .donate-link a:hover {
@@ -214,6 +214,10 @@ main * {
 /*******************************************/
 .gray {
     background: lightgray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5rem 0;
 }
 
 .visit {
@@ -224,14 +228,26 @@ main * {
 /* VOLUNTEER
 /*******************************************/
 .gray>section {
-    float: left;
+    /*float: left;
     width: 40%;
-    margin: 10rem 0;
+    margin: 10rem 0;*/
+    /*align-self: center;*/
+    /*flex-basis: 2 1 auto;*/
+    flex-grow: 1;
+    max-width: 700px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.gray>section* {
+    flex-grow: 1;
 }
 
 section.gray>section>img,
-section.gray>section+section>img {
-    width: 60%;
+section.gray>section+section>img,
+.gray p {
+    /*width: 60%;*/
 }
 
 .volunteer-container>img {
@@ -239,22 +255,22 @@ section.gray>section+section>img {
 }
 
 section>section:first-child {
-    margin-left: 10%;
-    padding-left: 15%;
+    /*margin-left: 10%;
+    padding-left: 15%;*/
 }
 
 .gray>section+section {
-    float: right;
+    /*float: right;
     margin-right: 10%;
-    padding-right: 15%;
+    padding-right: 15%;*/
 }
 
 
 .gray p {
-    width: 90%;
-    margin: 0 auto;
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
     text-align: center;
-    max-width: 400px;
+    /*max-width: 400px;*/
 }
 
 .volunteer-container {
@@ -285,13 +301,6 @@ footer * {
     background: orange;
     color: white;
 }
-
-/*a:nth-of-type(1):hover {
-    border: none;
-    background: transparent;
-    color: white;
-}*/
-
 
 
 .footer-left {
