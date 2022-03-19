@@ -229,7 +229,7 @@ main * {
 /*******************************************/
 .gray>section {
     flex-grow: 1;
-    max-width: 700px;
+    max-width: 1000px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -239,15 +239,54 @@ main * {
     flex-grow: 1;
 }
 
-
-.volunteer-container>img {
-    width: 40%;
-}
-
-
 .volunteer-container {
-    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 1000px;
+    padding: 5rem 0;
 }
+
+.volunteer-container>h2 {
+    flex-basis: 10%;
+}
+
+
+.volunteer-container>.bg-grapple {
+    flex: 1;
+    background-image: url('../assets/nathan-dumlao-AsCCBr7J-XM-unsplash.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.volunteer-container>.bg-grapple::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, #00000038 30%, #ffffff44 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+/*.volunteer-container>img {
+    flex-basis: 80%;
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+}*/
+
+/*
+.volunteer-container>.bg-grapple::before {
+    width: 100%;
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    background-size: contain;
+}*/
+
+
 
 .volunteer-description,
 .why-description {
