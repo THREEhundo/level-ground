@@ -71,7 +71,8 @@ p,
 a {
     font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    font-family: Roboto,
+        sans-serif;
 }
 
 .donate-link a:hover {
@@ -229,19 +230,16 @@ main * {
 /* VOLUNTEER
 /*******************************************/
 .gray>section {
-    flex-grow: 1;
-
     display: flex;
     flex-flow: column;
     align-items: center;
+    flex: 1 1 0;
 }
 
-.gray>section* {
-    flex-grow: 1;
-}
 
 .gray>section>img {
     max-width: 700px;
+    flex-grow: 1;
 }
 
 .volunteer-container {
@@ -288,24 +286,6 @@ main * {
     color: white;
 }
 
-/*.volunteer-container>img {
-    flex-basis: 80%;
-    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
-}*/
-
-/*
-.volunteer-container>.bg-grapple::before {
-    width: 100%;
-    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
-    background-size: contain;
-}*/
-
-
-
-.volunteer-description,
-.why-description {
-    width: 30%;
-}
 
 /******************************************
 /* FOOTER
@@ -397,21 +377,11 @@ footer * {
     margin-right: 2rem;
 }
 
-/*
-.social {
-    width: 25px;
-    height: 25px;
-}*/
 
 .fa-2xl {
     font-size: 2rem;
     line-height: 1.5;
 }
-
-/*.footer-right {
-    float: right;
-    margin: 2.5rem 4rem;
-}*/
 
 .footer-right:nth-child(1) {
     margin-top: 1rem;
@@ -442,7 +412,7 @@ footer .logo {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-@media screen and (max-width: 1325px) {
+/*@media screen and (max-width: 1325px) {
     .placeholder {
         width: 100%;
     }
@@ -454,7 +424,7 @@ footer .logo {
     .gray>section+section {
         padding-right: 0;
     }
-}
+}*/
 
 @media screen and (max-width: 910px) {
 
@@ -491,6 +461,14 @@ footer .logo {
 
 @media screen and (max-width: 450px) {
     .main-heading {
-        font-size: 7rem;
+        font-size: 6rem;
+    }
+
+    .footer-left {
+        flex-basis: 40%;
+    }
+
+    .social>i {
+        padding-right: 1rem;
     }
 }
