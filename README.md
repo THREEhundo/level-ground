@@ -1,7 +1,7 @@
 # Level Ground MMA
 Brochure site for Level Ground MMA
 
-**Link to project:** https://ecstatic-lamarr-b2a386.netlify.app/
+**Link to project:** [Level Ground MMA](https://ecstatic-lamarr-b2a386.netlify.app/)
 
 ![App Screenshot](https://i.imgur.com/J53AICk.png)
 
