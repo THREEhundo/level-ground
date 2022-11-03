@@ -3,7 +3,7 @@ Brochure site for Level Ground MMA
 
 **Link to project:** https://ecstatic-lamarr-b2a386.netlify.app/
 
-![App Screenshot](https://imgur.com/J53AICk)
+![App Screenshot](https://i.imgur.com/J53AICk.png)
 
 ## How It's Made:
 
